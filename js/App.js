@@ -38,7 +38,7 @@ function setupCards(col, cards) {
 	cards.forEach(function (card) {
     var cardObj = new Card(card.id, card.name);
   	col.addCard(cardObj);
-    createCard();
+
 	});
 }
     

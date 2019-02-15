@@ -4,6 +4,9 @@ var board = {
     addColumn: function(column) {
       this.element.appendChild(column.element);
       initSortable(column.id); //About this feature we will tell later
+      // adding a random color to every created card
+      let randomColor = Math.floor(Math.random()*16777215).toString(16);
+      column.element.querySelector('.column').style.backgroundColor = "#" + randomColor;
     },
     element: document.querySelector('#board .column-container')
 };
